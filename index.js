@@ -74,37 +74,3 @@ let productos2 = productos.map( producto => {
 
 contenedor.innerHTML = productos2.join('');
 
-function renderizarProductos(){
-    const prodcutosHtml = p
-}
-
-function adjuntarEvento (){
-    productos.forEach( producto => {
-        const boton = document.getElementById(`btn-agregar-${producto.id}`)
-        boton.addEventListener('click', ()=>{
-            agregarAlCarrito(producto);        
-        })
-    })
-}
-
-function agregarProductoalCarrito(productoAAgregar){
-    let carrito = JSON.parse(localStorage.getItem('carritoDeCompras')) || [];
-
-    const indiceProductoExistente = carrito.findIndex(item =>
-        item.id === productoAAgregar.id);
-
-        if(indiceProductoExistente !== -1){
-            carrito[indiceProductoExistente].cantidad++;
-        } else {
-            carrito.push({
-                id: productoAAgregar.id,
-                nombre: productoAAgregar.nombre,
-                precio: productoAAgregar.precio,
-                cantidad: 1,
-            })
-        }
-
-    localStorage.setItem()
-}
-
-renderizarProductos ('carritoDeCompras', JSON.stringify(carrito));

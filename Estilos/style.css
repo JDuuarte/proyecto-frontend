@@ -65,13 +65,10 @@ main{
 
 .contenedor{
     height: 40vh;
-    width: 90vw;
+    width: 70vw;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    /* display: flex;
-    flex-wrap: wrap; */
-    margin: auto;
     background-color: #f8f9fc;
 }
 
@@ -475,25 +472,17 @@ footer {
     }
 
     .contenedor{
-        width: 100%;
+        width: 90vw;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
         margin: auto;
         
     }
 
-    .contenedor article{
-        max-width: 40vw;
-        max-height: 60vh;
-        text-align: center;
-        margin: auto;
-        background-color: #FBFBFB;
-        border-radius: 1rem;
-    }
-
-    article img{
+  
+    div .card-img{
         margin-top: 10%;
         width: 100%;
     }
@@ -567,7 +556,7 @@ footer {
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(3, auto);
         grid-template-rows: auto;
         margin: auto;
         
@@ -582,7 +571,7 @@ footer {
         border-radius: 1rem;
     }
 
-    article img{
+    div .card-img{
         margin-top: 10%;
         width: 100%;
     }
